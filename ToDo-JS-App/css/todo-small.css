@@ -1,0 +1,62 @@
+
+
+
+
+
+/*--------ToDo List-----*/
+
+.todoDiv {
+    min-height: 100px;
+    width: 70%;
+    max-width: 400px;
+    border: 3px solid black;
+    border-radius: 3px;
+}
+.todoDiv h1 {
+    text-align: center;
+}
+.todoDiv ul {
+    border: 2px solid black;
+    margin-top: 5px;
+    list-style: none;
+}
+.toggleButtons {
+    margin: 30px 10px 10px 10px;
+}
+.addTasks {
+    margin: 20px 10px 10px 10px;
+}
+
+.hide {display: none;}
+
+.activeYes {
+
+}
+.activeNo {
+    text-decoration: line-through;
+}
+li {
+    margin: 1px;
+    border: 2px solid black;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li img {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 1px;
+}
+li button {
+    background-color: transparent;
+    border-image-outset: none;
+    outline-offset: none;
+}
+li input {
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 2px;
+}

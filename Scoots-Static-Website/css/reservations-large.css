@@ -1,0 +1,60 @@
+/*-------HEADER-------*/
+
+.header-logo {
+    width: 150px;
+}
+.headings {
+    margin: 2rem 0rem;
+}
+/*--------NAV-------*/
+
+nav button {display:none;}
+
+nav ul li a:hover {
+    color: rgb(255, 120, 90);
+}
+nav ul.hide {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+nav ul {
+    margin: auto;
+    list-style: none;
+}
+nav ul li a {
+    border: none;
+    background: rgba(46, 196, 182, 0.8);
+} 
+nav ul li {
+    padding:0%;
+    margin: 0%;
+    text-align: center;
+    width: 100%;
+    font-size: 130%;
+}
+nav ul li a:hover {background: rgba(46, 196, 182, 0.8);}
+nav ul li.active a {color: #f1f09de7;}
+nav ul li.active {background: rgba(46, 196, 182, 0.8);}
+nav ul li.active a:hover {color: #a8a764e7;}
+
+    /*--------MAIN-------*/
+.page-title {
+    font-size: 200%;
+    }
+
+/*-------FORM--------*/
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+fieldset {
+    min-width: 25rem;
+}
+/*-------FOOTER-------*/
+
+.social-media img {
+    max-width: 50px;
+}
+    

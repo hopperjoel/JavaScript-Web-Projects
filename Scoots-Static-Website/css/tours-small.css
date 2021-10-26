@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=M+PLUS+Rounded+1c&display=swap');
+
+/*-----FONTS-----*/
+
+h1, h2, h3, button, th {
+    font-family: 'Concert One', cursive;
+}
+p, nav, li, a, label, figcaption, td {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+/*-------HEADER-------*/
+
+header {
+  margin: 1rem 0rem 0rem 0rem;
+  padding: 0;
+  background: transparent;
+  display: flex;
+  flex-flow: row;
+}
+
+.header-logo {
+  width: 50%;
+  margin: 1rem 1rem .5rem .5rem;
+}
+.header-logo img {
+  width: 100%;
+}
+.headings {
+  margin: .5rem 0rem;
+}
+
+/*--------NAV-------*/
+
+nav {
+  background: rgba(46, 196, 182, 0.8);
+  width: 100%;
+  margin: auto;
+  border-radius: 0px 0px 5px 5px;
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
+  bottom: 0;
+  z-index: 2;
+  /* -webkit-transform: translateZ(0); */
+}
+
+nav:hover {background: rgba(46, 196, 182, 0.8);}
+nav button {
+    margin:.2rem 2%;
+    background-color: transparent;
+    border:none;
+    font-size: 2rem;
+}
+nav ul {
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top:1px solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(46, 196, 182, 0.8);
+}
+
+nav ul.hide {display: none;}
+
+nav ul li.active a {
+    color: #f1f09de7;
+}
+nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+
+.reservation-btn {
+  background: rgba(255, 120, 90, 0.8);
+  border-radius: 3px;
+  width: 20%;
+  height: 4rem;
+  padding: .5rem;
+  float: right;
+  text-align: center;
+  font-weight: 600;
+}
+.reservation-btn a {
+  text-decoration: none;
+  color: white;
+}
+.reservation-btn:hover {
+  background: rgba(255, 120, 90, 1);
+  color: black;
+}
+.phone {
+  display:none;
+}
+
+
+/*--------MAIN-------*/
+main {
+  max-width: 1400px;
+  margin: auto;
+  display: block;
+}
+
+.res-actioncall {
+  margin: 1rem 1rem 4rem 1rem;
+  padding: 1rem;
+  background:rgba(46, 196, 182, 0.6);
+  color: black;
+  text-align: center;
+  border:5px solid rgb(73, 106, 129);
+  border-radius: 5px;
+  max-width: 80%;
+  font-size: 75%
+}
+.res-actioncall button{
+  font-size: 140%;
+  background:rgba(73, 106, 129, 0.8);
+  color: white;
+  border-radius: 3px;
+}
+.res-actioncall button:hover {
+    color:rgba(46, 196, 182, 0.6);
+}
+.page-title {
+    text-align: center;
+    font-size: 180%;
+}
+.attraction {
+    border: 3px solid #999;
+    border-radius: 5px;
+    margin: 4rem auto;
+    padding: .5rem 1rem;
+}
+.attraction:hover {
+    background-color: rgba(200, 200, 200, .5);
+}
+.attraction h2 {
+    text-align: center;
+}
+.scoot-tour {
+    background-image: linear-gradient(rgba(46, 196, 182, 0.6), rgba(55, 206, 191, 0.3), rgba(46, 196, 182, 0.1));
+}
+.first-at {
+    background-image: linear-gradient(rgba(255, 120, 90, 0.6), rgba(255, 120, 90, 0.3), rgba(255, 92, 56, 0.1));
+}
+.second-at {
+    background-image: linear-gradient(rgba(46, 196, 182, 0.6), rgba(55, 206, 191, 0.3), rgba(46, 196, 182, 0.1));
+}
+.img-container {
+    width: 95%;
+    margin: auto;
+}
+.img-container img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px grey;
+}
+.add-attraction {
+    text-align: center;
+}
+.attraction a {
+    text-decoration: none;
+    color: black;
+}
+
+/*-------FOOTER-------*/
+
+footer {
+  display: block;
+  background: rgb(73, 106, 129);
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.social-media a{
+  padding: 0rem 0.5rem;
+  max-width: 50%;
+}
+.social-media img {
+  border-radius: 50%;
+  max-width: 10%;
+}
+.social-media img:hover {
+  background-color: rgba(400, 400, 400, .5);
+}

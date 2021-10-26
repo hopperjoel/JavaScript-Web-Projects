@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scoots Homepage</title>
+  <meta name="description" content="Homepage for Scoots Website - Assignment for WDD230
+  at Brigham Young University - Idaho">
+  <link rel="stylesheet" href="https://hopperjoel.github.io/WDD230.github.io/styles/normalize.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-width: 320px)" href="css/homepage-small.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-width: 481px)" href="css/homepage-medium.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-width: 1025px)" href="css/homepage-large.css">
+</head>
+<body id="wrapper">
+    <nav id="nav-solid" class="hide"><!--Need to make navigation bar sticky with opacity-->
+        <button onclick="toggleMenu()"> &#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!--Need to add a phone number item here-->
+            <li class="phone"><a href="tel:011-52-999-999-9999"></a>011-52-999-999-9999</li>
+        </ul>
+        <div class="reservation-btn"><a href="reservations.html" class="btn">Reserve Now!</a></div>
+    </nav>
+  <header>
+    <figure class = "header-logo">
+      <img src="images/scoots-logo.png" alt="logo">
+    </figure>
+    <div class = "headings">
+      <h2>Scooters, ATV's, and Jeep's</h2>
+    </div>
+  </header>
+  <main>
+    <div class="hero-image">
+        <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+            <div class="hero-slide fade">
+                <div class="slide-text">1 / 5</div>
+                    <img src="images/cozumel-beach-banner-2000w-pexels-justin-brinkhoff-5844598.jpg" alt="cozumel beach">
+                <div class="hero-caption">Photo by Justin Brinkhoff - Pexels</div>
+            </div>
+
+            <div class="hero-slide fade">
+                <div class="slide-text">2 / 5</div>
+                    <img src="images/kids-on-jeep-banner-2800w-pexels-nathan-moore-2479633.jpg" alt="jeep at cozumel">
+                <div class="hero-caption">Photo by Nathan Moore - Pexels</div>
+            </div>
+
+            <div class="hero-slide fade">
+                <div class="slide-text">3 / 5</div>
+                    <img src="images/pexels-adi-perets-cozumel-banner-3-1980w.jpg" alt="cozumel scene">
+                <div class="hero-caption">Photo by Adi Perets - Pexels</div>
+            </div>
+            <div class="hero-slide fade">
+                <div class="slide-text">4 / 5</div>
+                    <img src="images/muddy-jeep-banner-2800w-jeff-james-0u9QXu57KXY-unsplash.jpg" alt="offroad jeep">
+                <div class="hero-caption">Photo by Jeff James - Unsplash</div>
+            </div>
+            <div class="hero-slide fade">
+                <div class="slide-text">5 / 5</div>
+                    <img src="images/girl-scooter-island-2800w-pexels-artem-beliaikin-809609.jpg" alt="scooter on island">
+                <div class="hero-caption">Photo by Artem Beliaikin - Pexels</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+            <br>
+
+            <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+    <div class="hero-banner">
+        <p>Cozumel's Stop for Recreational Land Rentals!</p>
+    </div>
+    <section>
+        <div class="icon-cards">
+            <div class="scooter-icon card">
+                <figure class="icon">
+                    <img src="images/noun_Scooter_19523.png" alt="scooter icon">
+                    <figcaption>Low Cost</figcaption>
+                </figure>
+            </div>
+            <div class="atv-icon card">
+                <figure class="icon">
+                    <img src="images/noun_Dune_Buggy_40630.png" alt="side-by-side icon">
+                    <figcaption>Convenience</figcaption>
+                </figure>
+            </div>
+            <div class="jeep-icon card">
+                <figure class="icon">
+                    <img src="images/noun_Jeep_933200.png" alt="jeep icon">
+                    <figcaption>Adventure</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="rental-cards">
+        <div class="scooters">
+            <h3>Scooter Rentals</h3>
+            <figure class="card-image">
+                <img src="images/pexels-pixabay-metro-scooter-1000w.jpg" alt="A classic blue scooter">
+                <figcaption>From $20</figcaption>
+            </figure>
+            <p>See the sites! Our scooters are the perfect affordable option for cruising around the town
+            and island. All scooter rentals come with a helmet and a full tank of gas to last the whole day!</p>
+        </div>
+        <div class="atvs">
+            <h3>ATV Rentals</h3>
+            <figure class="card-image">
+                <img src="images/atv-1000w-pxfuel-com.jpg" alt="a 4-person side-by-side on the beach">
+                <figcaption>From $50</figcaption>
+            </figure>
+            <p>Rock the Trails! Our side-by-side ATV's offer a once in a lifetime adventure experience on
+            the island trials of Cozumel! The ATV's are street legal too, allowing you to go anywhere!</p>
+        </div>
+        <div class="jeeps">
+            <h3>Jeep Rentals</h3>
+            <figure class="card-image">
+                <img src="images/2-person-jeep-1000w.jpg" alt="a black 2-person jeep">
+                <figcaption>From $60</figcaption>
+            </figure>
+            <p>Ride in Style! Our Jeeps are perfect for any occasion! Explore the town, Rock the Trails, or Cruise the Island!
+            The Jeep has style, comfort, and utility you need!</p>
+        </div>
+    </section>
+    <div class="res-actioncall" id="popup">
+        <h2>Reserve in Advance and Save!</h2>
+        <a href="reservations.html"> 
+            <button>Let's Ride</button>
+        </a>
+    </div>
+    <section class="weather-summary">
+        <h2 class="summary-title">Cozumel Conditions</h2>
+        <div class="current-weather">
+            <h3>
+            Current Weather
+            </h3>
+            <p>Currently: <span id="current-condition"></span></p>
+            <p>Temperature: <span id="current-temp"></span> &deg;F</p>
+            <p>Feels Like: <span id="feels-like"></span> &deg;F</p>
+            <p>High: <span id="temp-high"></span> &deg;F</p>
+            <p>Humidity: <span id="humidity"></span>&#37;</p>
+            <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+        </div>
+        <div class="five-day-forecast">
+            <div class ="forecast-bar">
+                <div class="flex-col">
+                    <p><span class="col-head" id="day-1"></span></p>
+                    <span id="imagesrc-1"></span>&nbsp; <img src="" alt="" id="icon-1">
+                    <p><span class="data" id="temp-1"></span>&deg;F</p>
+                </div>
+                <div class="flex-col">
+                    <p><span class="col-head" id="day-2"></span></p>
+                    <span id="imagesrc-2"></span>&nbsp; <img src="" alt="" id="icon-2">
+                    <p><span class="data" id="temp-2"></span>&deg;F</p>
+                </div>
+                <div class="flex-col">
+                    <p><span class="col-head" id="day-3"></span></p>
+                    <span id="imagesrc-3"></span>&nbsp; <img src="" alt="" id="icon-3">
+                    <p><span class="data" id="temp-3"></span>&deg;F</p>
+                </div>
+                <div class="flex-col">
+                    <p><span class="col-head" id="day-4"></span></p>
+                    <span id="imagesrc-4"></span>&nbsp; <img src="" alt="" id="icon-4">
+                    <p><span class="data" id="temp-4"></span>&deg;F</p>
+                </div>
+                <div class="flex-col">
+                    <p><span class="col-head" id="day-5"></span></p>
+                    <span id="imagesrc-5"></span>&nbsp; <img src="" alt="" id="icon-5">
+                    <p><span class="data" id="temp-5"></span>&deg;F</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  </main>
+  <footer>
+    <div class = "social-media">
+        <a href="https://www.facebook.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/scoots/images/facebook-icon.png" alt="facebook-icon"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/scoots/images/instagram-icon.png" alt="instagram-icon"></a>
+        <a href="https://www.youtube.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/scoots/images/youtube-icon.png" alt="youtube-icon"></a>
+        <a href="https://www.tripadvisor.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/scoots/images/tripadvisor.png" alt="trip-advisor-icon"></a>
+    </div>
+    <p>Scoots Motor Rentals | &copy;BYU-I 2021 <br> 011-52-999-999-9999 <br> contact@scootsmotors.com</p>
+    <p>Joel Hopper | BYU-Idaho <span id="datetime"></span><br>
+    <span><a class="assignment-portal" href="https://hopperjoel.github.io/WDD230.github.io/index.html">Assignment Portal</a></span> | 
+    <a class="attributions" href="resources.html">Attributions</a>
+    </footer>
+    <script src="js/weather-summary.js"></script>
+    <script src="js/homepage.js"></script>
+</body>
+</html>
